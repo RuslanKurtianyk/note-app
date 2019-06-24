@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { addNote } from '../actions'
 import { Formik } from 'formik'
 import { NoteForm } from '../components/NoteForm'
+import Container from '@material-ui/core/Container'
 
 const AddNote = ({ dispatch }) => {
   const onFormSubmit = ({text}) => {
@@ -10,12 +11,12 @@ const AddNote = ({ dispatch }) => {
   }
 
   return (
-    <div>
+    <Container>
       <Formik
              render={props => <NoteForm {...props} />}
              onSubmit={onFormSubmit}
            />
-    </div>
+    </Container>
   )
 }
 
