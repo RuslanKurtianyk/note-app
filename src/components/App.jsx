@@ -1,12 +1,13 @@
 import React from 'react'
 import AddNote from '../containers/AddNote'
 import NoteList from '../containers/NoteList'
+import Container from '@material-ui/core/Container';
 
 const App = () => (
-  <div>
+  <Container>
     <AddNote />
     <NoteList />
-  </div>
+  </Container>
 )
 
 export default App
