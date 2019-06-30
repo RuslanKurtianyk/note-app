@@ -8,6 +8,10 @@ const notes = (state = [], action) => {
             text: action.text
           }
         ]
+      case 'REMOVE_NOTE':
+        return [
+          ...state.filter(note => note.id !== action.id)
+        ]
       default:
         return state
     }

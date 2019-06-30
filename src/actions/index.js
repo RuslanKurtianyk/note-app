@@ -5,3 +5,8 @@ export const addNote = text => ({
   id: nextNoteId++,
   text
 })
+
+export const removeNote = id => ({
+  type: 'REMOVE_NOTE',
+  id
+})
