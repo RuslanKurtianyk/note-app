@@ -6,6 +6,7 @@ import './App.css'
 
 const App = () => (
   <Container >
+    <div className='tear-image'></div>
     <AddNote />
     <NoteList />
   </Container>

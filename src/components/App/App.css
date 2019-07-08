@@ -10,3 +10,30 @@ body {
 div .note-item {
     background-color: var(--secondary-bg-color);
 }
+.note-item {
+    background-color: var(--secondary-bg-color);
+}
+
+.tear-image {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 73px;
+    padding: 21px;
+    border: none;
+    -webkit-border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,1);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: #f5fec0;
+    -webkit-transform: rotateX(-38.961130068895976deg) rotateY(18.907607239317166deg) rotateZ(-45.26366581533504deg);
+    transform: rotateX(-38.961130068895976deg) rotateY(18.907607239317166deg) rotateZ(-45.26366581533504deg);
+
+    position: fixed;
+    z-index: -1;
+
+  }
