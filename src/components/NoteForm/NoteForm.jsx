@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import Box from '@material-ui/core/Box'
 import TextField from '@material-ui/core/TextField'
 import SaveIcon from '@material-ui/icons/Save'
 import Container from '@material-ui/core/Container'
@@ -15,7 +14,7 @@ const useStyles = makeStyles(() => ({
         height: "auto",
         marginLeft: 20,
     },
-  }))
+}))
 
 export const NoteForm = (props) => {
     const { handleSubmit, handleChange } = props
@@ -25,21 +24,21 @@ export const NoteForm = (props) => {
         <form onSubmit={handleSubmit}>
             <Container className={classes.container}>
                 <TextField
-                    name="text" 
+                    className="note-text-field"
+                    name="text"
                     variant="outlined"
                     margin="dense"
                     onChange={handleChange}
                 />
-                <Box>
-                    <Button 
-                        className={classes.button}
-                        variant="contained"
-                        size="large"
-                        type="submit">
-                            <SaveIcon />
-                            Save
+                <Button
+                    className={classes.button}
+                    variant="contained"
+                    size="large"
+                    type="submit">
+                    <SaveIcon />
+                    Save
                     </Button>
-                </Box>
+
             </Container>
         </form>
     )

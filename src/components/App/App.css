@@ -14,6 +14,14 @@ div .note-item {
     background-color: var(--secondary-bg-color);
 }
 
+.note-text-field {
+    width: 100%;    
+}
+
+.note-text-field fieldset {
+    background-color: #6bbbb8;
+}
+
 .tear-image {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
