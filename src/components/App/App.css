@@ -1,0 +1,12 @@
+:root {
+    --primary-bg-color: #caf2d7;
+    --secondary-bg-color: #60a9a6;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+}
+
+div .note-item {
+    background-color: var(--secondary-bg-color);
+}

@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever'
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
+import classNames from 'classnames'
 
 const useStyles = makeStyles(() => ({
   card: {
@@ -19,10 +20,11 @@ const useStyles = makeStyles(() => ({
 export const NoteItem = (props) => {
     const {text, onRemove} = props
     const classes = useStyles()
+    const className = classNames(classes.card, 'note-item')
 
     return (
         <Card
-            className={classes.card}>
+            className={className}>
             <CardContent>
                 <Typography gutterBottom>
                     {text}

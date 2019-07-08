@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { NoteItem } from '../components/NoteItem'
+import NoteItem from '../components/NoteItem'
 import { removeNote } from '../actions'
 
 const NoteList = ({ dispatch, notes }) => {

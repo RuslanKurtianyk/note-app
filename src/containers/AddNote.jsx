@@ -2,12 +2,14 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addNote } from '../actions'
 import { Formik } from 'formik'
-import { NoteForm } from '../components/NoteForm'
+import NoteForm from '../components/NoteForm'
 import Container from '@material-ui/core/Container'
 
 const AddNote = ({ dispatch }) => {
   const onFormSubmit = ({text}) => {
-    dispatch(addNote(text))
+    if (text !== undefined && text !== '') {
+      dispatch(addNote(text))
+    }
   }
 
   return (
